@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #FF7A18;
+    padding: 10px 30px;
+}
+
+
+/* Navbar */
+.navbar{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 48px;
+}
+
+.navbar h1{
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FF7A18;
+}
+
+.navbar h1 a{
+    text-decoration: none;
+    color: #FF7A18;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.nav-links a:hover{
+    color: #FF7A18;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero{
+    background-image: url(/resources/bg2.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0 48px; 
+    gap: 30px;   
+    color: #fff;
+    position: relative;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.hero-text{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+}
+
+
+.hero p{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px;
+}
+
+.search-bar{
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.search-bar a{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: grey;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.search-input{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 1500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input::placeholder{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;    
+}
+
+/* Popular Dishes */
+.dishes{
+    padding: 137px 55px;
+    background: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.dishes h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.dish-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.dish-card{
+    background: white;
+    /* padding: 20px; */
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 390px;
+    height: 393px;
+    margin: 0 auto;
+}
+
+.dish-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.dish-card h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/* Special Dishes */
+.special-card{
+    background: white;
+    border-radius: 10px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 390px;
+    height: 487px;
+    margin: 0 auto;
+}
+
+.special-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-text h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.card-text p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.add-to_cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.add-to_cart p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF7A18;
+}
